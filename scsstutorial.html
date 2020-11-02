@@ -1,0 +1,66 @@
+// @import './resets';
+// @import './variables';
+
+// //functions
+
+// @function weight($weight-name) {
+//     @return map-get($font-weights, $weight-name)
+// };
+
+
+// //maps
+// $font-weights: (
+//     "regular": 400,
+//     "medium": 500,
+//     "bold": 700
+
+// );
+
+// //mixins
+
+// @mixin flexCenter($direction) {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: $direction;
+// }
+
+// @mixin theme($light-theme: true) {
+//     @if $light-theme {
+//         background: lighten($primary-color, 100%);
+//         color: darken($text-color, 100%);
+//     }
+// }
+
+// @mixin mobile {
+// @media(max-width: $mobile){
+//     @content;
+// }
+ 
+
+// }
+
+
+// body {
+//     background: $primary-color;
+//     color: $text-color;
+// }
+
+// .main {
+//     @include flexCenter(column);
+//     width: 80%;
+//     margin: 0 auto;
+    
+//     p {
+//         font-weight: weight(regular);
+//     }
+
+//     @include mobile {
+//         //what do you want it to do when below 800px
+//         flex-direction: column;
+//     }
+// }
+
+// .light {
+//     @include theme($light-theme: true);
+// }

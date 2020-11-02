@@ -1,0 +1,344 @@
+@import './resets';
+@import './variables';
+@import './breakpoints.scss';
+
+
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+.top-nav {
+
+    @include media (">tablet") {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly
+  
+
+        
+    }
+
+    .logo-img {
+        height: 30px;
+        margin: 30px 5%;
+
+        @include media (">tablet") {
+            height: 20px;
+            margin-left: 0px;
+        }
+
+    }
+
+
+    .hamburger {
+        float: right;
+        margin-top: 4px;
+        cursor: pointer;
+        margin: 30px 5%;
+
+        @include media (">tablet") {
+            display: none;
+        }
+        
+         
+    }
+  
+   
+    img {
+        height: 20px;
+    }
+
+    .navbar-button {
+        display: none;
+
+        @include media (">tablet") {
+            // height: 1px;
+            // max-width: 50%;
+            width: 20%;
+            font-size: 1rem;
+            margin-top: 0;
+            // padding: 5px;
+            // text-align: center;
+            // align-content: center;
+            // justify-content: center;
+            // justify-self: center;
+            // justify-items: center;
+
+
+
+        }
+    }
+}
+
+.menu {
+
+   
+    a {
+        text-decoration: none;
+        color: $header-color;
+        font-size: 1.5rem;
+        display: block;
+        background-color: $light;
+        line-height: 1.5;
+        padding: 5px 0 5px 0;
+        // transition: all .5s ease;
+
+        @include media (">tablet") {
+            font-size: 1rem;
+            background-color: white;
+            padding: 15px;
+
+        }
+
+    }
+
+    a:hover {
+        color: white;
+        background-color: $header-color;
+        transition: 0.5s;
+        text-decoration: none;
+    }
+   
+}
+
+.hidden {
+    display: none;
+
+    @include media(">tablet") {
+
+        // position: relative;
+        display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        text-align: center;
+        // width: 50%;
+        // background-color: white;
+    
+    }
+
+}
+
+
+
+// Top-Section
+
+.top-section {
+    overflow: hidden;
+}
+.intro-bg {
+    width: 100%;
+    position: absolute;
+    // clip: rect(0px, 0px, 15px, 0px);
+    // clip: rect(0, 50px, 50px, 0);
+
+}
+
+.mockups-img {
+    position: relative;
+    max-width: 100%;
+    top: -125px;
+}
+
+.intro-text {
+    
+    margin: 0 7%;
+    text-align: center;
+    height: 400px;
+    padding-top: 0;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 300;
+        color: $header-color;
+    }
+
+    p {
+        margin-top: 20px;
+        color: $text-color;
+        line-height: 1.7;
+        font-size: 1.25rem;
+
+    }
+    
+    
+}
+
+.invite-button {
+    background: #31D35C;
+    background-image: -webkit-linear-gradient(left, #31D35C, #2BB7DA);
+    background-image: -moz-linear-gradient(left, #31D35C, #2BB7DA);
+    background-image: -ms-linear-gradient(left, #31D35C, #2BB7DA);
+    background-image: -o-linear-gradient(left, #31D35C, #2BB7DA);
+    background-image: -webkit-gradient(to right, #31D35C, #2BB7DA);
+    -webkit-border-radius: 78px;
+    -moz-border-radius: 78px;
+    border-radius: 78px;
+    height: 65px;
+    line-height: 20px;
+    color: #FFFFFF;
+    // font-family: Open Sans;
+    width: 240px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 21px 31px 31px 31px;
+    // padding
+    text-shadow: 1px 1px 45px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border: solid hsl(220, 16%, 96%) 1px;
+    margin-top: 30px;
+ }
+ 
+ .invite-button:hover {
+    border: solid #337FED 1px;
+    background: #2BB7DA;
+    background-image: -webkit-linear-gradient(left, #2BB7DA, #31D35C);
+    background-image: -moz-linear-gradient(left, #2BB7DA, #31D35C);
+    background-image: -ms-linear-gradient(left, #2BB7DA, #31D35C);
+    background-image: -o-linear-gradient(left, #2BB7DA, #31D35C);
+    background-image: -webkit-gradient(to right, #2BB7DA, #31D35C);
+    -webkit-border-radius: 78px;
+    -moz-border-radius: 78px;
+    border-radius: 78px;
+    text-decoration: none;
+ }
+.why-easybank {
+    margin-top: 100px;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.reason {
+    text-align: center;
+    margin: 30px 10% 10px 10%;
+
+    h1 {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-weight: 300;
+        padding-top: 40px;
+    }
+
+    p {
+        line-height: 1.5;
+        color: $text-color;
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+
+    img {
+        width: 30%;
+    }
+}
+
+// Articles
+
+.articles-container {
+    display: flex;
+    flex-direction: column;
+    // max-width: 80%;
+    margin: 50px 5%;
+    text-align: center;
+    background-color: $light;
+
+
+    h1 {
+        font-weight: 300;
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-weight: 400;
+        padding-top: 10px;
+        font-size: 1.75rem;
+    }
+
+    p {
+        line-height: 1.5;
+        color: $text-color;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    span {
+        line-height: 1.5;
+        color: $text-color;
+        font-size: 1rem; 
+    }
+
+ 
+
+.articles {
+
+text-align: left;
+// margin-top: 50px;
+
+    
+    img {
+        width: 100%;
+        border-radius: 2%;
+        height: 280px;
+    }
+    
+    .articles-text {
+        margin: 40px 5%;
+    }
+
+    p {
+        margin-bottom: 70px;
+    }
+}
+
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: hsl(233, 26%, 24%);
+    height: fit-content;
+    color: white;
+    // padding-top: 00px;
+
+    .logo-img {
+        width: 65%;
+        padding: 50px 50px;
+  
+    }
+
+    .social-icons {
+        
+        img {
+            width:12%;
+            padding: 12px;
+        }
+    }
+
+    ul {
+        padding-top: 20px;
+        line-height: 2.2;
+        font-size: 1.4rem;
+        font-weight: 350;
+    }
+
+    .invite-button {
+        margin-bottom: 40px;
+    }
+   
+    
+
+
+
+}

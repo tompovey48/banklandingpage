@@ -1,0 +1,306 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+}
+
+@media (min-width: 769px) {
+  .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.top-nav .logo-img {
+  height: 30px;
+  margin: 30px 5%;
+}
+
+@media (min-width: 769px) {
+  .top-nav .logo-img {
+    height: 20px;
+    margin-left: 0px;
+  }
+}
+
+.top-nav .hamburger {
+  float: right;
+  margin-top: 4px;
+  cursor: pointer;
+  margin: 30px 5%;
+}
+
+@media (min-width: 769px) {
+  .top-nav .hamburger {
+    display: none;
+  }
+}
+
+.top-nav img {
+  height: 20px;
+}
+
+.top-nav .navbar-button {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .top-nav .navbar-button {
+    width: 20%;
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+
+.menu a {
+  text-decoration: none;
+  color: #2d314d;
+  font-size: 1.5rem;
+  display: block;
+  background-color: #fafafa;
+  line-height: 1.5;
+  padding: 5px 0 5px 0;
+}
+
+@media (min-width: 769px) {
+  .menu a {
+    font-size: 1rem;
+    background-color: white;
+    padding: 15px;
+  }
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #2d314d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+}
+
+.top-section {
+  overflow: hidden;
+}
+
+.intro-bg {
+  width: 100%;
+  position: absolute;
+}
+
+.mockups-img {
+  position: relative;
+  max-width: 100%;
+  top: -125px;
+}
+
+.intro-text {
+  margin: 0 7%;
+  text-align: center;
+  height: 400px;
+  padding-top: 0;
+}
+
+.intro-text h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #2d314d;
+}
+
+.intro-text p {
+  margin-top: 20px;
+  color: #9698a6;
+  line-height: 1.7;
+  font-size: 1.25rem;
+}
+
+.invite-button {
+  background: #31D35C;
+  background-image: -o-linear-gradient(left, #31D35C, #2BB7DA);
+  background-image: -webkit-gradient(to right, #31D35C, #2BB7DA);
+  border-radius: 78px;
+  height: 65px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 240px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 21px 31px 31px 31px;
+  text-shadow: 1px 1px 45px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  border: solid #f3f4f6 1px;
+  margin-top: 30px;
+}
+
+.invite-button:hover {
+  border: solid #337FED 1px;
+  background: #2BB7DA;
+  background-image: -o-linear-gradient(left, #2BB7DA, #31D35C);
+  background-image: -webkit-gradient(to right, #2BB7DA, #31D35C);
+  border-radius: 78px;
+  text-decoration: none;
+}
+
+.why-easybank {
+  margin-top: 100px;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reason {
+  text-align: center;
+  margin: 30px 10% 10px 10%;
+}
+
+.reason h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.reason h2 {
+  font-weight: 300;
+  padding-top: 40px;
+}
+
+.reason p {
+  line-height: 1.5;
+  color: #9698a6;
+  font-size: 1.25rem;
+  padding: 10px;
+}
+
+.reason img {
+  width: 30%;
+}
+
+.articles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 5%;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.articles-container h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.articles-container h2 {
+  font-weight: 400;
+  padding-top: 10px;
+  font-size: 1.75rem;
+}
+
+.articles-container p {
+  line-height: 1.5;
+  color: #9698a6;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.articles-container span {
+  line-height: 1.5;
+  color: #9698a6;
+  font-size: 1rem;
+}
+
+.articles-container .articles {
+  text-align: left;
+}
+
+.articles-container .articles img {
+  width: 100%;
+  border-radius: 2%;
+  height: 280px;
+}
+
+.articles-container .articles .articles-text {
+  margin: 40px 5%;
+}
+
+.articles-container .articles p {
+  margin-bottom: 70px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  background-color: #2d314d;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+}
+
+footer .logo-img {
+  width: 65%;
+  padding: 50px 50px;
+}
+
+footer .social-icons img {
+  width: 12%;
+  padding: 12px;
+}
+
+footer ul {
+  padding-top: 20px;
+  line-height: 2.2;
+  font-size: 1.4rem;
+  font-weight: 350;
+}
+
+footer .invite-button {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
