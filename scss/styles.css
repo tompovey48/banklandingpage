@@ -21,9 +21,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 30px;
   }
 }
 
@@ -62,9 +63,12 @@ body {
 
 @media (min-width: 769px) {
   .top-nav .navbar-button {
-    width: 20%;
+    max-width: 200px;
+    height: 50px;
     font-size: 1rem;
     margin-top: 0;
+    display: inline;
+    line-height: 0.5;
   }
 }
 
@@ -109,17 +113,44 @@ body {
 
 .top-section {
   overflow: hidden;
+  background-color: #fafafa;
 }
 
-.intro-bg {
+.intro-bg-mobile {
   width: 100%;
   position: absolute;
 }
 
+@media (min-width: 769px) {
+  .intro-bg-mobile {
+    display: none;
+  }
+}
+
+.intro-bg-desktop {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .intro-bg-desktop {
+    max-width: 60%;
+    position: absolute;
+    right: -200px;
+    display: inline;
+  }
+}
+
 .mockups-img {
   position: relative;
-  max-width: 100%;
   top: -125px;
+}
+
+@media (min-width: 769px) {
+  .mockups-img {
+    float: right;
+    right: -250px;
+    max-width: 60%;
+  }
 }
 
 .intro-text {
@@ -140,6 +171,21 @@ body {
   color: #9698a6;
   line-height: 1.7;
   font-size: 1.25rem;
+}
+
+@media (min-width: 769px) {
+  .intro-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+    margin: 10%;
+    text-align: left;
+  }
 }
 
 .invite-button {
